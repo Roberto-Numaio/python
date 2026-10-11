@@ -1,7 +1,6 @@
-vel = int(input("Qual e a velocidade do carro em analise: "))
-velocidade = (80 - vel)*(-1)
-multa = 7 * velocidade
-if vel > 80:
+velocidade = int(input("Qual e a velocidade do carro em analise: "))
+multa = 7 * (velocidade - 80)
+if velocidade > 80:
     print('Excesso de velocidade!!!! \n Multado')
     print('A multa sera de {} reais'.format(multa))
 else: 
