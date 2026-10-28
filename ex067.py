@@ -8,9 +8,7 @@ while True:
     if num < 0:
         break
     print('-'*30)
-    while cont <= 10:
-        print(f'{num} x {cont} = {num * cont}')
-        cont += 1
-    cont = 1
+    for t in range(1, 11):
+        print(f'{num} x {t} = {num * t}')
     print('-'*30)
-print('PROMAGA ENCERRADO!')
+print('PROGRAMA ENCERRADO!')

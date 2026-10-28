@@ -6,10 +6,10 @@ print('-=-'*10)
 while True:
     pc = randint(0, 10)
     jogador = int(input('Digite um numero (0 a 10): '))
+    total = pc + jogador
     escolha = ' '
     while escolha not in 'PI':
         escolha = input('Par ou Impar? [P/I] ').strip().upper()[0]
-        total = pc + jogador
     print(f'Voce jogou {jogador} e o computador {pc}. Total de {total}', end=' ')
     print('DEU PAR' if total % 2 == 0 else 'DEU IMPAR')
     if escolha == 'P':
@@ -18,6 +18,7 @@ while True:
             print('Voce VENCEU!')
             print('Vamos jogar novamente...')
             print('-=-'*10)
+            v += 1
         else:
             print('Voce PERDEU!')
             break
@@ -27,6 +28,8 @@ while True:
             print('Voce VENCEU!')
             print('Vamos jogar novamente...')
             print('-=-'*10)
+            v += 1
         else:
             print('Voce PERDEU!')
             break
+print(f'GAME OVER! Voce venceu {v} vezes.')

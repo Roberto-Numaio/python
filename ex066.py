@@ -2,7 +2,7 @@ print('-=-'*20)
 print('Contador de numeros')
 print('-=-'*20)
 
-num = cont = soma = 0
+cont = soma = 0
 while True:
     num = int(input('Digite um numero [999 para parar]: '))
     if num == 999:
