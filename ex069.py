@@ -15,8 +15,10 @@ while True:
     if sexo in 'Ff' and idade < 20:
         totalM += 1
         resp = ' '
-        while resp not in 'Nn':
+        while resp not in 'SN':
             resp = str(input('Quer continuar? [S/N] ')).strip()
+        if resp in 'Nn':
+            break
 print('Total de pessoas com mais de 18 anos: {}'.format(total18))
 print('Ao todo temos {} homens cadastrados.',format(totalH))
 print('Sao ao todo {} mulheres menores de 20 anos.'.format(totalM))
