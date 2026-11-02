@@ -3,6 +3,7 @@ print('-=-'*10)
 print('Jogo do Par ou Impar')
 print('-=-'*10)
 
+v = 0
 while True:
     pc = randint(0, 10)
     jogador = int(input('Digite um numero (0 a 10): '))
@@ -22,7 +23,7 @@ while True:
         else:
             print('Voce PERDEU!')
             break
-    if escolha == 'I':
+    elif escolha == 'I':
         if total % 2 == 1:
             print('-=-'*10)
             print('Voce VENCEU!')
@@ -32,4 +33,5 @@ while True:
         else:
             print('Voce PERDEU!')
             break
+    print('GAME OVER!')
 print(f'GAME OVER! Voce venceu {v} vezes.')
